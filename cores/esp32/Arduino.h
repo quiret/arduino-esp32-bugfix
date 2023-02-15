@@ -104,7 +104,9 @@
 #endif
 
 #define bit(b) (1UL << (b))
+#ifndef _BV
 #define _BV(b) (1UL << (b))
+#endif
 
 #define digitalPinToTimer(pin)      (0)
 #define analogInPinToBit(P)         (P)
